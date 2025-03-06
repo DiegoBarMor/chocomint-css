@@ -1,7 +1,8 @@
 
 The MIT License (MIT)
 
-Copyright (c) 2025 DiegoBarMor
+Copyright (c) 2025 chocomint-css (DiegoBarMor)
+Copyright (c) 2020 Simple.css (Kev Quirk)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
