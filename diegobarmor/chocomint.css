@@ -6,18 +6,44 @@
 /************************************************/
 /*************     chocomint THEME     *************/
 /************************************************/
+/* Default (light) theme */
 :root {
-  color-scheme: dark;
-  --bg: #111111;
-  --accent-bg: #222222;
+  --bg: #111;
+  --accent-bg: #222;
+  --contents-bg: #fff;
+  --text: #212121;
+  --text-light: #585858;
+  --anti-text: white;
+  --border: #898EA4;
+  --accent: #57a296;
+  --accent-fixed: #8dd9cc;
+  --accent-hover: orange;
+  --accent-text: var(--bg);
+  --header-title: #344b47;
+  --code: #d81b60;
+  --preformatted: #444;
+  --marked: #b08f3d;
+  --disabled: #efefef;
+}
+
+body.dark-mode {
+  --bg: #111;
+  --accent-bg: #222;
   --contents-bg: #212121;
+  --text: #dcdcdc;
+  --text-light: #ababab;
+  --anti-text: black;
+  --border: #898EA4;
+  --accent-fixed: #8dd9cc;
   --accent: #8dd9cc;
   --accent-hover: orange;
   --accent-text: var(--bg);
   --header-title: #c3fcf1;
   --marked: #eac470;
+  --code: #f06292;
+  --preformatted: #ccc;
+  --disabled: #111;
 }
-
 
 /************************************************/
 /**************** Navigation bar ****************/
@@ -77,6 +103,9 @@ a.button:hover {
   color: var(--accent-text);
   box-shadow: 0px 0px 16px var(--accent-hover);
 }
+.chocomint-nav-buttons > a.button {
+  background-color: var(--accent-fixed);
+}
 
 
 /************************************************/
@@ -108,9 +137,26 @@ big {
   font-size: 1.25em;
   color: var(--header-title);
 }
+b {
+  color: var(--marked);
+}
+mark {
+  color: var(--anti-text);
+}
 a:hover {
   color: var(--accent-hover);
 }
-b {
+.dark-box {
+  background-color: var(--accent-bg);
+  color: var(--text);
+  padding: 1rem;
+  text-align: center;
+}
+.neon-marked {
   color: var(--marked);
+  text-shadow: 0 0 16px var(--marked);
+}
+.neon-accent {
+  color: var(--accent);
+  text-shadow: 0 0 16px var(--accent);
 }

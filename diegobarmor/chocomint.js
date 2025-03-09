@@ -53,3 +53,21 @@ function toggle_particles() {
 }
 
 toggle_particles() // Start with the background particles
+
+
+///////////////////////////////////////////////////////
+//////////////////// TOGGLE THEME /////////////////////
+///////////////////////////////////////////////////////
+function toggle_theme() {
+  const body = document.body;
+  if (body.classList.contains("dark-mode")) {
+    body.classList.remove("dark-mode");
+  } else {
+    body.classList.add("dark-mode");
+  }
+}
+
+// Set default theme to dark mode
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("dark-mode");
+});
