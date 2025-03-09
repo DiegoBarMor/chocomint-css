@@ -4,24 +4,18 @@
 */
 
 /************************************************/
-/*************     PRISMA THEME     *************/
+/*************     chocomint THEME     *************/
 /************************************************/
 :root {
   color-scheme: dark;
   --bg: #111111;
-  --accent-bg: #2b2b2b;
+  --accent-bg: #222222;
   --contents-bg: #212121;
-  --text: #dcdcdc;
-  --text-light: #ababab;
   --accent: #8dd9cc;
   --accent-hover: orange;
   --accent-text: var(--bg);
-  --code: #f06292;
-  --preformatted: #ccc;
-  --disabled: #111;
-  --bold: #eac470;
-  --header: #c3fcf1;
-  --nav-box: #222222;
+  --header-title: #c3fcf1;
+  --marked: #eac470;
 }
 
 
@@ -32,25 +26,26 @@ body > header{
   top: 0;
   width: 100%;
   padding: 10px 0;
-  position: fixed;
-  background-color: var(--nav-box);
   border-bottom: 2px solid var(--accent);
   box-shadow: 0px 0px 32px var(--accent);
   z-index: 3;
 }
+body > header.dynamic-navbar {
+  position: fixed;
+}
 body > header > :only-child {
   margin-block-start: 0;
 }
-.prisma-nav-container {
+.chocomint-nav-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.prisma-nav-icon {
+img.button-neon {
   margin-left: 1rem;
   max-width: 40px;
 }
-.prisma-nav-buttons {
+.chocomint-nav-buttons {
   text-align: center;
   /* display: flex; */
   justify-content: center;
@@ -58,7 +53,7 @@ body > header > :only-child {
 }
 
 /********** Buttons **********/
-a img.prisma-nav-icon {
+a img.button-neon {
   /* display: inline-block; */
   filter: brightness(0) saturate(100%)
     invert(92%) sepia(15%) saturate(893%)
@@ -67,18 +62,18 @@ a img.prisma-nav-icon {
     /* calculated with https://codepen.io/sosuke/pen/Pjoqqp for --accent: #8dd9cc; */
   transition: filter 0.4s;
 }
-a img.prisma-nav-icon:hover {
+a img.button-neon:hover {
   filter: brightness(0) saturate(100%)
     invert(76%) sepia(56%) saturate(4966%)
     hue-rotate(1deg) brightness(108%)
     contrast(104%) drop-shadow(0 0 4px var(--accent-hover));;
     /* calculated with https://codepen.io/sosuke/pen/Pjoqqp for --accent-hover: #ffa500; */
 }
-nav a.button {
+a.button {
   margin: .5rem !important;
   box-shadow: 0px 0px 16px var(--accent);
 }
-nav a.button:hover {
+a.button:hover {
   color: var(--accent-text);
   box-shadow: 0px 0px 16px var(--accent-hover);
 }
@@ -92,35 +87,30 @@ body {
 }
 main{
   padding: 2rem;
-  margin-top: calc(60px + 1rem);
   box-shadow: 0px 0px 32px var(--accent);
   background-color: var(--contents-bg);
 }
 h1 {
-  color: var(--header);
+  color: var(--header-title);
   font-weight: bold !important;
 }
 h2 {
-  color: var(--header);
+  color: var(--header-title);
   font-weight: bold !important;
 }
 h3 {
-  color: var(--header);
+  color: var(--header-title);
 }
 h4 {
-  color: var(--header);
+  color: var(--header-title);
+}
+big {
+  font-size: 1.25em;
+  color: var(--header-title);
 }
 a:hover {
   color: var(--accent-hover);
 }
 b {
-  color: var(--bold);
-}
-
-
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-  main {
-    margin-top: calc(60px + 2rem);
-  }
+  color: var(--marked);
 }

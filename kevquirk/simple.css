@@ -1,6 +1,7 @@
 /*
   Simple.css is a CSS template that allows you to make a good looking website really quickly.
-  Downloaded from https://github.com/kevquirk/simple.css on 2025-03-05
+  Downloaded from https://github.com/kevquirk/simple.css on 2025-03-05;
+  adapted by DiegoBarMor
   Original author: Kev Quirk
 */
 
@@ -88,9 +89,7 @@ body > * {
 /* Make the header bg full width, but the content inline with body */
 body > header {
   background-color: var(--accent-bg);
-  border-bottom: 1px solid var(--border);
   text-align: center;
-  padding: 0 0.5rem 2rem 0.5rem;
   grid-column: 1 / -1;
 }
 
