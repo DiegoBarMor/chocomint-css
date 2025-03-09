@@ -10,9 +10,12 @@
   <body>
     <header class="dynamic-navbar" id="navbar">
       <nav class="chocomint-nav-container">
-        <a href="https://diegobarmor.github.io/">
-          <img class="button-neon" src="icons/home.png" alt="Icon">
-        </a>
+        <abbr title="Home DiegoBarMor"><a href="https://diegobarmor.github.io/">
+            <img class="icon-neon" src="icons/home.png" alt="Icon">
+        </a></abbr>
+        <abbr title="Toggle BG Particles">
+          <img class="icon-neon" src="icons/particles.png" alt="Icon" onclick="toggle_particles()">
+        </abbr>
         <div class="chocomint-nav-buttons">
           <a class="button" href="#about">About</a>
           <a class="button" href="#navigation_bar">Navigation Bar</a>
@@ -29,7 +32,8 @@
       <h2 id="about">About</h2>
         <p>
           Chocomint CSS is a minimal CSS framework based on <a href="https://simplecss.org/">Simple CSS</a>, adapted to have a more <a class="button">neon</a> and <big>minty</big> look. High contrast can be achieved with <b>bold text</b>, <mark>marked text</mark> or <code>code_blocks</code>. Icon buttons offer further contrast and reactivity: <br><br>
-          <a><img class="button-neon" src="icons/home.png" alt="Icon"></a>
+          <img class="icon-neon" src="icons/home.png" alt="Icon">
+          <img class="icon-neon" src="icons/particles.png" alt="Icon">
         </p>
 
         <blockquote>
@@ -59,15 +63,9 @@
 
       <h2 id="bg_particles">Background Particles</h2>
         <p>
-          The background particles are achieved by pure CSS, implemented in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/csscrafter/star-particles.css">star-particles.css</a>. An HTML element must be added in the body to achieve this effect.
+          The background particles are achieved by pure CSS, implemented in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/csscrafter/star-particles.css">star-particles.css</a>. An HTML element must be added in the body to achieve this effect: <code>&ltdiv id="bg-animation-container"&gt&lt/div&gt</code>. The function <code>toggle_particles</code> in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/diegobarmor/chocomint.js">chocomint.js</a> just takes care to toggle on or off the particles in this <code>div</code>.
         </p>
 
-        <pre><code>
-          &ltdiv class="bg-animation"&gt
-            &ltdiv id="stars0"&gt&lt/div&gt&ltdiv id="stars1"&gt&lt/div&gt
-            &ltdiv id="stars2"&gt&lt/div&gt&ltdiv id="stars3"&gt&lt/div&gt
-          &lt/div&gt
-        </code></pre>
 
       <h3>Filler</h3>
         <blockquote>
@@ -78,10 +76,7 @@
 
     </main>
 
-    <div class="bg-animation">
-      <div id="stars0"></div><div id="stars1"></div>
-      <div id="stars2"></div><div id="stars3"></div>
-    </div>
+    <div id="bg-animation-container"></div>
 
   </body>
 

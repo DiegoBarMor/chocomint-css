@@ -1,4 +1,6 @@
-window.onscroll = function () { scrollFunction() };
+//////////////////////////////////////////
+///////// DYNAMIC NAVIGATION BAR /////////
+//////////////////////////////////////////
 
 var speed = 0.2;
 var max_offset = 0;
@@ -28,3 +30,26 @@ function scrollFunction() {
     document.getElementById("navbar").style.top = Math.round(offset) + "px";
     y0 = y1;
 }
+
+window.onscroll = function () { scrollFunction() };
+
+
+///////////////////////////////////////////////////////
+////////// TOGGLE BACKGROUND PARTICLE EFFECT //////////
+///////////////////////////////////////////////////////
+
+function toggle_particles() {
+    var container = document.getElementById("bg-animation-container");
+    if (container.innerHTML === '') { // Create the bg-animation divs
+        container.innerHTML = `
+        <div class="bg-animation">
+          <div id="stars0"></div><div id="stars1"></div>
+          <div id="stars2"></div><div id="stars3"></div>
+        </div>
+      `;
+    } else { // Destroy the bg-animation divs
+        container.innerHTML = '';
+    }
+}
+
+toggle_particles() // Start with the background particles
