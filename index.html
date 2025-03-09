@@ -2,9 +2,9 @@
 <html>
   <head>
     <title>Chocomint CSS</title>
-    <link rel="stylesheet" type="text/css" href="kevquirk/simple.css">
-    <link rel="stylesheet" type="text/css" href="diegobarmor/chocomint.css">
-    <link rel="stylesheet" type="text/css" href="csscrafter/star-particles.css">
+    <link rel="stylesheet" type="text/css" href="vendor-css/simple.css">
+    <link rel="stylesheet" type="text/css" href="vendor-css/star-particles.css">
+    <link rel="stylesheet" type="text/css" href="chocomint.css">
   </head>
 
   <body>
@@ -61,7 +61,7 @@
 
       <h2 id="navigation_bar">Navigation Bar</h2>
         <p>
-          Chocomint CSS provides a dynamic navigation bar. When scrolling down, the navigation bar will disappear. When scrolling up, the navigation bar will reappear. The speed at which it does so can be adjusted in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/diegobarmor/chocomint.js">chocomint.js</a> (<code>speed</code> variable). <br><br>
+          Chocomint CSS provides a dynamic navigation bar. When scrolling down, the navigation bar will disappear. When scrolling up, the navigation bar will reappear. The speed at which it does so can be adjusted in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/chocomint.js">chocomint.js</a> (<code>speed</code> variable). <br><br>
           Ahead is a filler text to help test this behaviour. Continue to <a href="#bg_particles">the next section</a> to read about the background particles.
         </p>
 
@@ -73,7 +73,7 @@
 
       <h2 id="bg_particles">Background Particles</h2>
         <p>
-          The background particles are achieved by pure CSS, implemented in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/csscrafter/star-particles.css">star-particles.css</a>. An HTML element must be added in the body to achieve this effect: <code>&ltdiv id="bg-animation-container"&gt&lt/div&gt</code>. The function <code>toggle_particles</code> in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/diegobarmor/chocomint.js">chocomint.js</a> just takes care to toggle on or off the particles in this <code>div</code>.
+          The background particles are achieved by pure CSS, implemented in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/csscrafter/star-particles.css">star-particles.css</a>. An HTML element must be added in the body to achieve this effect: <code>&ltdiv id="bg-animation-container"&gt&lt/div&gt</code>. The function <code>toggle_particles</code> in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/chocomint.js">chocomint.js</a> just takes care to toggle on or off the particles in this <code>div</code>.
         </p>
 
 
@@ -90,6 +90,6 @@
 
   </body>
 
-  <script src="diegobarmor/chocomint.js"></script>
+  <script src="chocomint.js"></script>
 
 </html>
