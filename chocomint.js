@@ -41,12 +41,7 @@ window.onscroll = function () { scrollFunction() };
 function toggle_particles() {
     var container = document.getElementById("bg-animation-container");
     if (container.innerHTML === '') { // Create the bg-animation divs
-        container.innerHTML = `
-        <div class="bg-animation">
-          <div id="stars0"></div><div id="stars1"></div>
-          <div id="stars2"></div><div id="stars3"></div>
-        </div>
-      `;
+        container.innerHTML = `<div class="bg-animation"><div id="stars0"></div><div id="stars1"></div><div id="stars2"></div><div id="stars3"></div></div>`;
     } else { // Destroy the bg-animation divs
         container.innerHTML = '';
     }

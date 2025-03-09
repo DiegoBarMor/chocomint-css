@@ -1,1 +1,4 @@
+vendor-css/ linguist-vendored
 index.html linguist-vendored
+chocomint.min.js linguist-vendored
+chocomint.min.css linguist-vendored
