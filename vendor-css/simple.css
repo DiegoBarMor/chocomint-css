@@ -31,6 +31,7 @@
   --preformatted: #444;
   --marked: #b08f3d;
   --disabled: #efefef;
+  --theme-opacity: 1.0;
 }
 
 /* Dark theme */
@@ -53,12 +54,13 @@
     --code: #f06292;
     --preformatted: #ccc;
     --disabled: #111;
+    --theme-opacity: 0.8;
   }
-  /* Add a bit of transparency so light media isn't so glaring in dark mode */
-  img,
-  video {
-    opacity: 0.8;
-  }
+}
+/* Add a bit of transparency (in dark mode) so light media isn't so glaring in dark mode */
+img,
+video {
+  opacity: var(--theme-opacity);
 }
 
 /* Reset box-sizing */
@@ -443,8 +445,8 @@ textarea:not([cols]) {
 
 /* Add arrow to drop-down */
 select:not([multiple]) {
-  background-image: linear-gradient(45deg, transparent 49%, var(--text) 51%),
-    linear-gradient(135deg, var(--text) 51%, transparent 49%);
+  background-image: linear-gradient(45deg, transparent 49%, var(--accent-bg) 51%),
+    linear-gradient(135deg, var(--accent-bg) 51%, transparent 49%);
   background-position: calc(100% - 15px), calc(100% - 10px);
   background-size: 5px 5px, 5px 5px;
   background-repeat: no-repeat;

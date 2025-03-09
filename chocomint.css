@@ -24,6 +24,7 @@
   --preformatted: #444;
   --marked: #b08f3d;
   --disabled: #efefef;
+  --theme-opacity: 1.0;
 }
 
 body.dark-mode {
@@ -43,6 +44,7 @@ body.dark-mode {
   --code: #f06292;
   --preformatted: #ccc;
   --disabled: #111;
+  --theme-opacity: 0.8;
 }
 
 /************************************************/
@@ -107,6 +109,30 @@ a.button:hover {
   background-color: var(--accent-fixed);
 }
 
+/********** Dropwdowns **********/
+select {
+  background-color: var(--accent);
+  box-shadow: 0px 0px 16px var(--accent);
+  color: var(--accent-text);
+}
+.chocomint-nav-buttons > select {
+  background-color: var(--accent-fixed);
+  box-shadow: 0px 0px 16px var(--accent-fixed);
+}
+select:hover {
+  background-color: var(--accent-hover);
+  box-shadow: 0px 0px 16px var(--accent-hover);
+  color: var(--accent-text);
+}
+select:open {
+  background-color: var(--accent-fixed);
+  box-shadow: 0px 0px 16px var(--accent-fixed);
+  color: var(--accent-text);
+}
+optgroup, option {
+  background-color: var(--contents-bg);
+  color: var(--text);
+}
 
 /************************************************/
 /***************** Main content *****************/
