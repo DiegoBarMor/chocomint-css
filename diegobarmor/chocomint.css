@@ -53,7 +53,7 @@ img.button-neon {
 }
 
 /********** Buttons **********/
-a img.button-neon {
+img.button-neon {
   /* display: inline-block; */
   filter: brightness(0) saturate(100%)
     invert(92%) sepia(15%) saturate(893%)
@@ -62,7 +62,7 @@ a img.button-neon {
     /* calculated with https://codepen.io/sosuke/pen/Pjoqqp for --accent: #8dd9cc; */
   transition: filter 0.4s;
 }
-a img.button-neon:hover {
+img.button-neon:hover {
   filter: brightness(0) saturate(100%)
     invert(76%) sepia(56%) saturate(4966%)
     hue-rotate(1deg) brightness(108%)

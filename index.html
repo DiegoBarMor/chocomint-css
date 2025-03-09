@@ -8,18 +8,18 @@
   </head>
 
   <body>
-    <header class="dynamic-navbar" id="navbar"><div>
+    <header class="dynamic-navbar" id="navbar">
       <nav class="chocomint-nav-container">
         <a href="https://diegobarmor.github.io/">
           <img class="button-neon" src="icons/home.png" alt="Icon">
         </a>
         <div class="chocomint-nav-buttons">
           <a class="button" href="#about">About</a>
-          <a class="button" href="#navbar">NavBar</a>
+          <a class="button" href="#navigation_bar">Navigation Bar</a>
           <a class="button" href="#bg_particles">BG Particles</a>
         </div>
       </nav>
-    </div></header>
+    </header>
 
     <main id="main">
       <h1>Chocomint CSS</h1>
@@ -45,15 +45,36 @@
           </p>
         </article>
 
-      <h2 id="navbar">Navigation Bar</h2>
+      <h2 id="navigation_bar">Navigation Bar</h2>
         <p>
-          [WIP]
+          Chocomint CSS provides a dynamic navigation bar. When scrolling down, the navigation bar will disappear. When scrolling up, the navigation bar will reappear. The speed at which it does so can be adjusted in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/diegobarmor/chocomint.js">chocomint.js</a> (<code>speed</code> variable). <br><br>
+          Ahead is a filler text to help test this behaviour. Continue to <a href="#bg_particles">the next section</a> to read about the background particles.
         </p>
+
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae commodo urna. Morbi sodales iaculis enim, sit amet maximus odio sagittis ac. Aenean est tellus, semper vitae dui non, egestas mollis lectus. Vestibulum sit amet sapien rutrum massa fringilla varius quis sed nunc. Proin massa mi, condimentum nec tempus et, finibus ut sem. Integer in eros nec eros imperdiet finibus. Nunc et quam tincidunt lorem volutpat aliquam in eget neque. Sed hendrerit purus nibh, et lobortis turpis commodo eget. Sed non erat et risus pulvinar ultrices. Duis pellentesque, lacus ac tincidunt scelerisque, odio velit volutpat nulla, vel auctor nisl leo non tellus. Aliquam non quam arcu. Nam luctus auctor libero, pretium imperdiet enim commodo sed. Donec quis ligula arcu. Sed eu turpis sit amet augue sagittis dignissim. <br><br>
+          Nunc vitae tellus pulvinar, sollicitudin felis in, venenatis nunc. Nam auctor odio in pulvinar molestie. Etiam blandit vulputate lorem a varius. Aenean sodales leo elementum dui ultrices suscipit in quis quam. In suscipit urna posuere diam ultrices, vitae maximus libero rhoncus. Quisque ac augue lacinia, consectetur lacus ut, volutpat libero. Vivamus varius quam nec enim maximus facilisis. Sed molestie nunc nec quam porta, eget facilisis tortor auctor. Integer vitae purus eros. Donec lectus ipsum, maximus et sem ut, mollis commodo tortor. <br><br>
+          Duis ornare in ex id fermentum. Sed sed dapibus dui, ut accumsan odio. Nam vel magna accumsan leo dapibus luctus. Vivamus hendrerit quam at libero semper fringilla. Sed eget elementum dui. Fusce quis viverra mauris, ut vulputate augue. Nullam tempus nisl vitae malesuada fringilla. Integer consectetur egestas molestie. Sed eget lorem eget lacus placerat pharetra ut eu eros. Proin ornare tellus ut tellus posuere, a dictum quam tempor. Fusce tincidunt sit amet ligula eu egestas. Suspendisse ut egestas est.
+        </blockquote>
 
       <h2 id="bg_particles">Background Particles</h2>
         <p>
-          [WIP]
+          The background particles are achieved by pure CSS, implemented in <a href="https://github.com/DiegoBarMor/chocomint-css/blob/main/csscrafter/star-particles.css">star-particles.css</a>. An HTML element must be added in the body to achieve this effect.
         </p>
+
+        <pre><code>
+          &ltdiv class="bg-animation"&gt
+            &ltdiv id="stars0"&gt&lt/div&gt&ltdiv id="stars1"&gt&lt/div&gt
+            &ltdiv id="stars2"&gt&lt/div&gt&ltdiv id="stars3"&gt&lt/div&gt
+          &lt/div&gt
+        </code></pre>
+
+      <h3>Filler</h3>
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae commodo urna. Morbi sodales iaculis enim, sit amet maximus odio sagittis ac. Aenean est tellus, semper vitae dui non, egestas mollis lectus. Vestibulum sit amet sapien rutrum massa fringilla varius quis sed nunc. Proin massa mi, condimentum nec tempus et, finibus ut sem. Integer in eros nec eros imperdiet finibus. Nunc et quam tincidunt lorem volutpat aliquam in eget neque. Sed hendrerit purus nibh, et lobortis turpis commodo eget. Sed non erat et risus pulvinar ultrices. Duis pellentesque, lacus ac tincidunt scelerisque, odio velit volutpat nulla, vel auctor nisl leo non tellus. Aliquam non quam arcu. Nam luctus auctor libero, pretium imperdiet enim commodo sed. Donec quis ligula arcu. Sed eu turpis sit amet augue sagittis dignissim. <br><br>
+          Nunc vitae tellus pulvinar, sollicitudin felis in, venenatis nunc. Nam auctor odio in pulvinar molestie. Etiam blandit vulputate lorem a varius. Aenean sodales leo elementum dui ultrices suscipit in quis quam. In suscipit urna posuere diam ultrices, vitae maximus libero rhoncus. Quisque ac augue lacinia, consectetur lacus ut, volutpat libero. Vivamus varius quam nec enim maximus facilisis. Sed molestie nunc nec quam porta, eget facilisis tortor auctor. Integer vitae purus eros. Donec lectus ipsum, maximus et sem ut, mollis commodo tortor. <br><br>
+          Duis ornare in ex id fermentum. Sed sed dapibus dui, ut accumsan odio. Nam vel magna accumsan leo dapibus luctus. Vivamus hendrerit quam at libero semper fringilla. Sed eget elementum dui. Fusce quis viverra mauris, ut vulputate augue. Nullam tempus nisl vitae malesuada fringilla. Integer consectetur egestas molestie. Sed eget lorem eget lacus placerat pharetra ut eu eros. Proin ornare tellus ut tellus posuere, a dictum quam tempor. Fusce tincidunt sit amet ligula eu egestas. Suspendisse ut egestas est.
+        </blockquote>
 
     </main>
 
@@ -63,4 +84,7 @@
     </div>
 
   </body>
+
+  <script src="diegobarmor/chocomint.js"></script>
+
 </html>
